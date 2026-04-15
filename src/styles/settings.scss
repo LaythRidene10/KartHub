@@ -1,0 +1,25 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+@use 'vuetify/settings' with (
+  $color-pack: true,
+  $border-radius-root: 8px,
+);
+
+/* Custom SASS Overwrites for Kart Builder Theme */
+html {
+  overflow-y: auto !important;
+}
+
+.v-application {
+  background-color: #000000 !important;
+}
+
+.v-theme--kartTheme {
+  --v-theme-surface: 30, 30, 30; /* #1E1E1E */
+  --v-theme-background: 0, 0, 0; /* #000000 */
+  --v-theme-primary: 211, 47, 47; /* #D32F2F */
+}
